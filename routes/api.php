@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('forms', 'FormController@index');
-Route::get('form/{id}', 'FormController@show');
+Route::get('form/{form}', 'FormController@show');
 Route::post('form', 'FormController@store');
 Route::put('form', 'FormController@store');
 Route::delete('form/{id}', 'FormController@destroy');

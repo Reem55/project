@@ -17,7 +17,7 @@ class FormController extends Controller
     {
        //get all the forms
 
-        $forms = Form::paginate(15);
+        $forms = Form::paginate;
 
         // Return collection of forms as a resource
 
@@ -42,20 +42,8 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        $form = $request->isMethod('put') ? Form::FindOrFail
-        ($request->form_id) : new Form;
-        $form->id = $request->input('form_id');
-        $form->first name = $request->input('first name');
-        $form->last name = $request->input('last name');
-        $form->email = $request->input('email');
-        $form->subject = $request->input('subject');
-        $form->description = $request->input('description');
-        if($form->save()){
-            return new FormResource($form);
-        }
-
-
-
+     $form =Form::create($request->all())
+        return new FormResource($form);
 
     }
 
@@ -65,9 +53,8 @@ class FormController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Form $form)
     {
-       $form = Form::findOrFail($id);
        //Return single form as a resource
 
         return new FormResource($form);
@@ -104,9 +91,8 @@ class FormController extends Controller
      */
     public function destroy($id)
     {
-        $form = Form::findOrFail($id);
-        if ($form->delete()) {
+
             return new FormResource($form);
-        }
+
     }
 }
