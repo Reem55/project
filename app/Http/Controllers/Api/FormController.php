@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Form;
 use App\Http\Resources\Form as FormResource;
 
@@ -15,41 +15,42 @@ class FormController extends Controller
      */
     public function index()
     {
-       //get all the forms
+        //get all the forms
 
-        $forms = Form::paginate;
+        $forms = Form::paginate();
 
         // Return collection of forms as a resource
 
-       return FormResource::collection($forms);
+        return FormResource::collection($forms);
     }
 
 
     public function create()
     {
-        return view ('create');
+        return view('create');
     }
 
 
     public function store(Request $request)
     {
-     $form =Form::create($request->all())
+        $form = Form::create($request->all());
+
         return new FormResource($form);
 
     }
 
     public function show(Form $form)
     {
-       //Return single form as a resource
+        //Return single form as a resource
 
         return new FormResource($form);
     }
 
 
-    public function destroy($id)
+    public function destroy(Form $form)
     {
+        $form->delete();
 
-            return new FormResource($form);
-
+        return response();
     }
 }
