@@ -17,13 +17,13 @@ class Form extends JsonResource
        // return parent::toArray($request);
         return[
             'id' =>$this->id,
-            'first name' => $this -> first name,
-             'last name' => $this -> last name,
+            'firstname' => $this -> firstname,
+             'last name' => $this -> lastname,
              'email' => $this ->email,
              'subject' => $this -> subject,
              'description' =>$this->description
 
 
-        ]
+        ];
     }
 }

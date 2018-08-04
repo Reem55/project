@@ -13719,8 +13719,9 @@ window.axios = __webpack_require__(5);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-__webpack_require__(36);
+//require('./components/Example');
 __webpack_require__(37);
+__webpack_require__(42);
 
 /***/ }),
 /* 13 */
@@ -35947,86 +35948,26 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 36 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-throw new Error("Cannot find module \"react\"");
-throw new Error("Cannot find module \"react-dom\"");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var Example = function (_Component) {
-    _inherits(Example, _Component);
-
-    function Example() {
-        _classCallCheck(this, Example);
-
-        return _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).apply(this, arguments));
-    }
-
-    _createClass(Example, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row justify-content-center' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-8' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'card' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'card-header' },
-                                'Example Component'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'card-body' },
-                                'I\'m an example component!'
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Example;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Example);
-
-
-if (document.getElementById('example')) {
-    __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Example, null), document.getElementById('example'));
-}
-
-/***/ }),
+/* 36 */,
 /* 37 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: C:/xamp/htdocs/project/resources/assets/js/components/Form.js: Invalid left-hand side in assignment expression (40:30)\n\n  38 |             </thead>\n  39 |             <tbody>\n> 40 |         {this.state.data.map((form, 1) = > ()\n     |                               ^\n  41 | \n  42 |         < tr >\n  43 |         < td > {first name} < /td>\n");
+throw new Error("Module build failed: SyntaxError: C:/xamp/htdocs/project/resources/assets/js/components/Form.js: Invalid left-hand side in arrow function parameters (33:40)\n\n  31 |             <h2 className=\"blog-post-title\">\n  32 |             <a href=\"forms/{{ $form->id }}\">\n> 33 |             {this.state.data.map((form, 1) => {\n     |                                         ^\n  34 | \n  35 |             }\n  36 |     )}\n");
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports) {
 
 throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, scandir 'C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\vendor'\n    at Object.fs.readdirSync (fs.js:904:18)\n    at Object.getInstalledBinaries (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\extensions.js:129:13)\n    at foundBinariesList (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\errors.js:20:15)\n    at foundBinaries (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\errors.js:15:5)\n    at Object.module.exports.missingBinary (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\errors.js:45:5)\n    at module.exports (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\binding.js:15:30)\n    at Object.<anonymous> (C:\\xamp\\htdocs\\project\\node_modules\\node-sass\\lib\\index.js:14:35)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (C:\\xamp\\htdocs\\project\\node_modules\\sass-loader\\lib\\loader.js:3:14)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:13:17)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:165:10)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:173:18\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:36:3)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:165:10)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:173:18\n    at runLoaders (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:170:18\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:27:11)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:165:10)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:173:18\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:36:3)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:165:10)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:173:18\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:36:3)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:165:10)\n    at C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:173:18\n    at loadLoader (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\loadLoader.js:36:3)\n    at iteratePitchingLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:169:2)\n    at runLoaders (C:\\xamp\\htdocs\\project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:362:2)\n    at NormalModule.doBuild (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModule.js:182:3)\n    at NormalModule.build (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModule.js:275:15)\n    at Compilation.buildModule (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\Compilation.js:157:10)\n    at moduleFactory.create (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\Compilation.js:460:10)\n    at factory (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModuleFactory.js:243:5)\n    at applyPluginsAsyncWaterfall (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModuleFactory.js:94:13)\n    at C:\\xamp\\htdocs\\project\\node_modules\\tapable\\lib\\Tapable.js:268:11\n    at NormalModuleFactory.params.normalModuleFactory.plugin (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\CompatibilityPlugin.js:52:5)\n    at NormalModuleFactory.applyPluginsAsyncWaterfall (C:\\xamp\\htdocs\\project\\node_modules\\tapable\\lib\\Tapable.js:272:13)\n    at resolver (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModuleFactory.js:69:10)\n    at process.nextTick (C:\\xamp\\htdocs\\project\\node_modules\\webpack\\lib\\NormalModuleFactory.js:196:7)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)");
+
+/***/ }),
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: C:/xamp/htdocs/project/resources/assets/js/components/create.js: 'return' outside of function (14:4)\n\n  12 | render ()\n  13 | {\n> 14 |     return (\n     |     ^\n  15 | \n  16 |         <div className=\"container\">\n  17 |     <div className=\"row\">\n");
 
 /***/ })
 /******/ ]);

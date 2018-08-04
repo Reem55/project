@@ -2,66 +2,57 @@ import React from 'react'
 import ReactDom from 'react-dom'
 
 export default class Form extends React.component {
-
     constructor() {
         super();
-        this.state = {
-            data: []
-        }
+        this.state
+        data:[]
+
     }
 
-    componentWillMount() {
+    componentWilMount() {
         let $this = this;
-
-        axios.get('/api/users').then(resoponse => {
-         $this.setState({
+        axios.get('api/users').then(response => {
+            this.setstate({
             data: response.data
         })
+
         }).catch(error => {
             console.log(error)
         })
     }
+
     render() {
         return (
+            <div className="col-sm-8 blog-main">
+            <div className="col-sm-8 blog-main">
+            <div className="blog-post">
+            <div className="card">
+            <div className="card-block">
+            <h2 className="blog-post-title">
+            <a href="forms/{{ $form->id }}">
+            {this.state.data.map((form, 1) => {
 
-            <div>
-            <h2> Form</h2>
-            <table  className = "table table-bordered">
-            <thead>
-            <tr>
-            <th>First Name</th>
-             <th>Last Name</th>
-              <th>email</th>
-            <th>subject</th>
-        <th>descritpion</th>
-            </tr>
-            </thead>
-            <tbody>
-        {this.state.data.map((form, 1) = > ()
+            }
+    )}
+    </a>
+        </h2>
 
-        < tr >
-        < td > {first name} < /td>
-        < td >{last name}</td>
-        < td > johndoe@example.com < /td>
-        < td > new chapter < /td>
-        < td > hello < /td>
-        < td > < ahref = ""
-        className = "btn btn-primary" > Edit < /a> ||
-            < a
-        href = ""
-        className = "btn btn-danger" > Delete < /a>
-            < /td>
-            < /tr>
-    )
-    })
-            </tbody>
-            </table>
-            </div>
+
+
+        </div>
+        </div>
+
+    }
+)}
+
 
 
     )
 
     }
-}
 
-ReactDom.render(<Form/> document.getElementById('App'))
+
+if (document.getElementById('app')) {
+    ReactDom.render( < Form/ > document.getElementById('App')
+)
+}
